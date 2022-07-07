@@ -101,7 +101,7 @@ const Home: NextPage = () => {
 
         <div className={styles.header_content}>
           <h1>Hi i am Mario</h1>
-          <p>I'm a full stack developer.</p>
+          <p>I am a full stack developer.</p>
         </div>
       </div>
 
