@@ -1,0 +1,78 @@
+@import "./variables";
+
+.mainContainer {
+  max-width: 450px;
+  margin: auto;
+  margin-top: 50px;
+  height: auto;
+  padding: 10px;
+  // outline: 1px solid #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &_content {
+    text-align: center;
+    margin-top: 10px;
+
+    * {
+      margin: 0;
+    }
+  }
+}
+
+.profilePic {
+  width: 75px;
+  height: min-content;
+  border-radius: 50%;
+}
+
+.links {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    @include paddingY(15px);
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 100000px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    transition: all 0.3s ease;
+    box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 15px 0px;
+
+    &:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.5);
+    }
+
+    &:active {
+      transition: all 0.1s ease;
+      transform: translateY(2px);
+      opacity: 0.8;
+    }
+
+    &_icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+}
